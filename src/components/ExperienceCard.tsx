@@ -11,12 +11,12 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <div 
-      className="group cursor-pointer"
+    <div
+      className="group cursor-pointer rounded-2xl transition-all duration-300 bg-transparent"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="relative overflow-hidden rounded-xl">
+      <div className="relative overflow-hidden rounded-xl transition-all duration-300 bg-transparent group-hover:bg-white group-hover:shadow-[0px_58px_23px_rgba(97,57,0,0.01),0px_33px_20px_rgba(97,57,0,0.05),0px_15px_15px_rgba(97,57,0,0.09),0px_4px_8px_rgba(97,57,0,0.1)]">
         <img
           src={experience.image}
           alt={experience.title}
