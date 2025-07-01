@@ -61,10 +61,6 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
           </span>
         </div>
 
-        <p className="text-sm text-gray-600 line-clamp-2">
-          {experience.description}
-        </p>
-
         <div className="flex items-center justify-between pt-1">
           <div className="text-xs text-gray-500">
             Vendu par {experience.provider}
