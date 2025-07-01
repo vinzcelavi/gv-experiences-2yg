@@ -55,6 +55,10 @@ export default {
           4: 'hsl(var(--chart-4))',
           5: 'hsl(var(--chart-5))',
         },
+        custom: {
+          red: '#C6502E',
+          'red-dark': '#A03D24',
+        },
       },
       keyframes: {
         'accordion-down': {

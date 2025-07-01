@@ -14,7 +14,7 @@ const ExperienceGrid: React.FC = () => {
           </h2>
         </div>
         
-        <button className="flex items-center space-x-2 px-4 py-2 border border-gray-300 rounded-lg hover:bg-gray-50 transition-colors duration-200">
+        <button className="flex items-center space-x-2 px-4 py-2 border border-gray-300 rounded-[1000px] hover:bg-gray-50 transition-colors duration-200">
           <Filter className="w-4 h-4" />
           <span className="text-sm font-medium">Afficher les filtres</span>
         </button>
