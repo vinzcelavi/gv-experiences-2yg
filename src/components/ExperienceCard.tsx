@@ -39,7 +39,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
           <div className={`absolute inset-0 bg-black/10 transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`} />
         </div>
         <div className="relative pt-2 space-y-1 flex flex-col flex-1 justify-between">
-          <div className="flex flex-col">
+          <div className="flex flex-col gap-1">
             <div className="flex items-center justify-between">
               <h3 className="text-sm font-medium text-gray-900 line-clamp-2 leading-5">
                 {experience.title}
