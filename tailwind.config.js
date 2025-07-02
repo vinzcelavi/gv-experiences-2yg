@@ -19,6 +19,10 @@ export default {
         sm: 'calc(var(--radius) - 4px)',
       },
       colors: {
+        'tuscany-light': {
+          DEFAULT: '#D2694A',
+          border: '#D2694A',
+        },
         tuscany: {
           DEFAULT: '#C6502E',
           border: '#C6502E',

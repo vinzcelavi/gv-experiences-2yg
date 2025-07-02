@@ -24,8 +24,8 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
       >
         <div className={`relative overflow-hidden bg-white rounded-[8px] ${isHovered ? '' : 'shadow-[0px_58px_23px_rgba(97,57,0,0.01),0px_33px_20px_rgba(97,57,0,0.05),0px_15px_15px_rgba(97,57,0,0.09),0px_4px_8px_rgba(97,57,0,0.1)]'}`}>
           {experience.type && (
-            <div className={`z-10 absolute bottom-2 left-2 px-1 pt-1.5 pb-0.5 rounded-[4px] flex items-center justify-center ${experience.type === 'Ticket' ? 'bg-tuscany' : 'bg-white'}`}>
-              <span className={`leading-none text-sm font-brixton ${experience.type === 'Ticket' ? 'text-white' : ''}`}>
+            <div className={`z-10 absolute bottom-2 left-2 px-1 pt-1.5 pb-0.5 rounded-[4px] flex items-center justify-center ${experience.type === 'Ticket' ? 'bg-tuscany-light' : 'bg-white'}`}>
+              <span className={`leading-none text-xs font-brixton ${experience.type === 'Ticket' ? 'text-white' : ''}`}>
                 {experience.type}
               </span>
             </div>
