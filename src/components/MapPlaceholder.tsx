@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, ZoomIn, ZoomOut, Maximize2 } from 'lucide-react';
+import { MapPin, ZoomIn, ZoomOut, Maximize2, Star } from 'lucide-react';
 
 const MapPlaceholder: React.FC = () => {
   return (
@@ -28,29 +28,23 @@ const MapPlaceholder: React.FC = () => {
 
       {/* Sample Map Pins */}
       <div className="absolute top-1/4 left-1/3 transform -translate-x-1/2 -translate-y-1/2">
-        <div className="relative">
-          <MapPin className="w-8 h-8 text-red-500 fill-current drop-shadow-lg" />
-          <div className="absolute -top-2 left-1/2 -translate-x-1/2 bg-white text-xs font-bold px-2 py-1 rounded-full shadow-md border">
-            4.7
-          </div>
+        <div className="flex items-center gap-1 bg-white text-xs font-bold px-2 py-1 rounded-full shadow-md">
+          4.7
+          <Star className="w-4 h-4 text-gold fill-current" />
         </div>
       </div>
 
       <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        <div className="relative">
-          <MapPin className="w-8 h-8 text-red-500 fill-current drop-shadow-lg" />
-          <div className="absolute -top-2 left-1/2 -translate-x-1/2 bg-white text-xs font-bold px-2 py-1 rounded-full shadow-md border">
-            4.7
-          </div>
+        <div className="flex items-center gap-1 bg-white text-xs font-bold px-2 py-1 rounded-full shadow-md">
+          4.7
+          <Star className="w-4 h-4 text-gold fill-current" />
         </div>
       </div>
 
       <div className="absolute bottom-1/3 right-1/4 transform translate-x-1/2 translate-y-1/2">
-        <div className="relative">
-          <MapPin className="w-8 h-8 text-red-500 fill-current drop-shadow-lg" />
-          <div className="absolute -top-2 left-1/2 -translate-x-1/2 bg-white text-xs font-bold px-2 py-1 rounded-full shadow-md border">
-            4.5
-          </div>
+        <div className="flex items-center gap-1 bg-white text-xs font-bold px-2 py-1 rounded-full shadow-md">
+          4.5
+          <Star className="w-4 h-4 text-gold fill-current" />
         </div>
       </div>
 

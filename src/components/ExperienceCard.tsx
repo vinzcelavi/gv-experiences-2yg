@@ -11,12 +11,12 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
 
   return (
     <div
-      className="group bg-transparent rounded-[12px] transition-all duration-300"
+      className="group bg-transparent transition-all duration-300"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div
-        className={`relative p-[8px] pb-[14px] transition-all duration-300 rounded-2xl cursor-pointer ${
+        className={`relative p-[8px] pb-[14px] transition-all duration-300 rounded-[12px] cursor-pointer ${
           isHovered
             ? 'bg-white shadow-[0px_58px_23px_rgba(97,57,0,0.01),0px_33px_20px_rgba(97,57,0,0.05),0px_15px_15px_rgba(97,57,0,0.09),0px_4px_8px_rgba(97,57,0,0.1)]'
             : 'bg-transparent'
