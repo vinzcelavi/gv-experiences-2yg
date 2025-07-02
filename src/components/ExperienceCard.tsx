@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Star, Heart } from 'lucide-react';
+import { Star } from 'lucide-react';
 import { Experience } from '../types/experience';
 
 interface ExperienceCardProps {
@@ -7,60 +7,41 @@ interface ExperienceCardProps {
 }
 
 const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
-  const [isLiked, setIsLiked] = useState(false);
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div
-      className="group bg-transparent rounded-2xl transition-all duration-300"
+      className="group bg-transparent rounded-[12px] transition-all duration-300"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
       <div
-        className={`relative p-2 pb-4 transition-all duration-300 rounded-2xl cursor-pointer ${
+        className={`relative p-[8px] pb-[14px] transition-all duration-300 rounded-2xl cursor-pointer ${
           isHovered
             ? 'bg-white shadow-[0px_58px_23px_rgba(97,57,0,0.01),0px_33px_20px_rgba(97,57,0,0.05),0px_15px_15px_rgba(97,57,0,0.09),0px_4px_8px_rgba(97,57,0,0.1)]'
             : 'bg-transparent'
         }`}
       >
-        <div className="relative overflow-hidden rounded-xl">
+        <div className={`relative overflow-hidden rounded-[8px] ${isHovered ? '' : 'shadow-[0px_58px_23px_rgba(97,57,0,0.01),0px_33px_20px_rgba(97,57,0,0.05),0px_15px_15px_rgba(97,57,0,0.09),0px_4px_8px_rgba(97,57,0,0.1)]'}`}>
           <img
             src={experience.image}
             alt={experience.title}
-            className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
+            className="w-full h-full object-cover aspect-[1.4] transition-transform duration-300 group-hover:scale-105"
           />
-          {/* Heart Icon */}
-          <button
-            onClick={(e) => {
-              e.stopPropagation();
-              setIsLiked(!isLiked);
-            }}
-            className="absolute top-3 right-3 p-2 rounded-full bg-white/80 hover:bg-white transition-colors duration-200"
-          >
-            <Heart
-              className={`w-4 h-4 transition-colors duration-200 ${
-                isLiked
-                  ? 'fill-red-500 text-red-500'
-                  : 'text-gray-600 hover:text-red-500'
-              }`}
-            />
-          </button>
           {/* Overlay on hover */}
-          {isHovered && (
-            <div className="absolute inset-0 bg-black/10 transition-opacity duration-300" />
-          )}
+          <div className={`absolute inset-0 bg-black/10 transition-opacity duration-300 ${isHovered ? 'opacity-0' : 'opacity-100'}`} />
         </div>
-        <div className="mt-3 space-y-1">
+        <div className="pt-2 space-y-1">
           <div className="flex items-center justify-between">
             <h3 className="text-sm font-medium text-gray-900 line-clamp-2 leading-5">
               {experience.title}
             </h3>
           </div>
           <div className="flex items-center space-x-1">
-            <Star className="w-4 h-4 fill-current text-yellow-400" />
             <span className="text-sm font-medium text-gray-900">
               {experience.rating}
             </span>
+            <Star className="w-4 h-4 fill-current text-yellow-400" />
             <span className="text-sm text-gray-500">
               ({experience.reviewCount.toLocaleString()})
             </span>
