@@ -12,65 +12,70 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
 
   return (
     <div
-      className="group cursor-pointer rounded-2xl transition-all duration-300 bg-transparent"
+      className="group bg-transparent rounded-2xl transition-all duration-300"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <div className="relative overflow-hidden rounded-xl transition-all duration-300 bg-transparent group-hover:bg-white group-hover:shadow-[0px_58px_23px_rgba(97,57,0,0.01),0px_33px_20px_rgba(97,57,0,0.05),0px_15px_15px_rgba(97,57,0,0.09),0px_4px_8px_rgba(97,57,0,0.1)]">
-        <img
-          src={experience.image}
-          alt={experience.title}
-          className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
-        />
-        
-        {/* Heart Icon */}
-        <button
-          onClick={(e) => {
-            e.stopPropagation();
-            setIsLiked(!isLiked);
-          }}
-          className="absolute top-3 right-3 p-2 rounded-full bg-white/80 hover:bg-white transition-colors duration-200"
-        >
-          <Heart 
-            className={`w-4 h-4 transition-colors duration-200 ${
-              isLiked ? 'fill-red-500 text-red-500' : 'text-gray-600 hover:text-red-500'
-            }`}
+      <div
+        className={`relative p-2 pb-4 transition-all duration-300 rounded-2xl cursor-pointer ${
+          isHovered
+            ? 'bg-white shadow-[0px_58px_23px_rgba(97,57,0,0.01),0px_33px_20px_rgba(97,57,0,0.05),0px_15px_15px_rgba(97,57,0,0.09),0px_4px_8px_rgba(97,57,0,0.1)]'
+            : 'bg-transparent'
+        }`}
+      >
+        <div className="relative overflow-hidden rounded-xl">
+          <img
+            src={experience.image}
+            alt={experience.title}
+            className="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105"
           />
-        </button>
-
-        {/* Overlay on hover */}
-        {isHovered && (
-          <div className="absolute inset-0 bg-black/10 transition-opacity duration-300" />
-        )}
-      </div>
-
-      <div className="mt-3 space-y-1">
-        <div className="flex items-center justify-between">
-          <h3 className="text-sm font-medium text-gray-900 line-clamp-2 leading-5">
-            {experience.title}
-          </h3>
+          {/* Heart Icon */}
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              setIsLiked(!isLiked);
+            }}
+            className="absolute top-3 right-3 p-2 rounded-full bg-white/80 hover:bg-white transition-colors duration-200"
+          >
+            <Heart
+              className={`w-4 h-4 transition-colors duration-200 ${
+                isLiked
+                  ? 'fill-red-500 text-red-500'
+                  : 'text-gray-600 hover:text-red-500'
+              }`}
+            />
+          </button>
+          {/* Overlay on hover */}
+          {isHovered && (
+            <div className="absolute inset-0 bg-black/10 transition-opacity duration-300" />
+          )}
         </div>
-        
-        <div className="flex items-center space-x-1">
-          <Star className="w-4 h-4 fill-current text-yellow-400" />
-          <span className="text-sm font-medium text-gray-900">
-            {experience.rating}
-          </span>
-          <span className="text-sm text-gray-500">
-            ({experience.reviewCount.toLocaleString()})
-          </span>
-        </div>
-
-        <div className="flex items-center justify-between pt-1">
-          <div className="text-xs text-gray-500">
-            Vendu par {experience.provider}
-            <br />
-            À partir de
+        <div className="mt-3 space-y-1">
+          <div className="flex items-center justify-between">
+            <h3 className="text-sm font-medium text-gray-900 line-clamp-2 leading-5">
+              {experience.title}
+            </h3>
           </div>
-          <div className="text-right">
-            <span className="text-lg font-semibold text-gray-900">
-              {experience.startingPrice}€
+          <div className="flex items-center space-x-1">
+            <Star className="w-4 h-4 fill-current text-yellow-400" />
+            <span className="text-sm font-medium text-gray-900">
+              {experience.rating}
             </span>
+            <span className="text-sm text-gray-500">
+              ({experience.reviewCount.toLocaleString()})
+            </span>
+          </div>
+          <div className="flex items-end justify-between pt-1">
+            <div className="text-xs text-gray-500">
+              Vendu par {experience.provider}
+              <br />
+              À partir de
+            </div>
+            <div className="text-right">
+              <span className=" text-lg font-semibold text-gray-900">
+                {experience.startingPrice}€
+              </span>
+            </div>
           </div>
         </div>
       </div>

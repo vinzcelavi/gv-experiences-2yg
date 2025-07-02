@@ -23,7 +23,7 @@ body {
 }
 
 /* Custom scrollbar */
-::-webkit-scrollbar {
+/* ::-webkit-scrollbar {
   width: 6px;
 }
 
@@ -38,7 +38,7 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #a8a8a8;
-}
+} */
 
 /* Line clamp utilities */
 .line-clamp-2 {
