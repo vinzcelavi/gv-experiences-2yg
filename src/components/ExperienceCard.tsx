@@ -16,7 +16,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <div
-        className={`relative p-[8px] pb-[14px] transition-all duration-300 rounded-[12px] cursor-pointer min-h-full ${
+        className={`relative p-[8px] pb-[14px] flex flex-col transition-all duration-300 rounded-[12px] cursor-pointer min-h-full ${
           isHovered
             ? 'bg-white shadow-[0px_58px_23px_rgba(97,57,0,0.01),0px_33px_20px_rgba(97,57,0,0.05),0px_15px_15px_rgba(97,57,0,0.09),0px_4px_8px_rgba(97,57,0,0.1)]'
             : 'bg-transparent'
@@ -24,7 +24,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
       >
         <div className={`relative overflow-hidden bg-white rounded-[8px] ${isHovered ? '' : 'shadow-[0px_58px_23px_rgba(97,57,0,0.01),0px_33px_20px_rgba(97,57,0,0.05),0px_15px_15px_rgba(97,57,0,0.09),0px_4px_8px_rgba(97,57,0,0.1)]'}`}>
           {experience.type && (
-            <div className={`z-10 absolute bottom-2 left-2 px-2 pt-1.5 pb-0.5 rounded-[4px] flex items-center justify-center ${experience.type === 'Ticket' ? 'bg-tuscany' : 'bg-white'}`}>
+            <div className={`z-10 absolute bottom-2 left-2 px-1 pt-1.5 pb-0.5 rounded-[4px] flex items-center justify-center ${experience.type === 'Ticket' ? 'bg-tuscany' : 'bg-white'}`}>
               <span className={`leading-none text-sm font-brixton ${experience.type === 'Ticket' ? 'text-white' : ''}`}>
                 {experience.type}
               </span>
@@ -38,8 +38,8 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
           {/* Overlay on hover */}
           <div className={`absolute inset-0 bg-black/10 transition-opacity duration-300 ${isHovered ? 'opacity-100' : 'opacity-0'}`} />
         </div>
-        <div className="relative pt-2 space-y-1 flex flex-col h-full">
-          <div className="flex-1">
+        <div className="relative pt-2 space-y-1 flex flex-col flex-1 justify-between">
+          <div className="flex flex-col">
             <div className="flex items-center justify-between">
               <h3 className="text-sm font-medium text-gray-900 line-clamp-2 leading-5">
                 {experience.title}
@@ -70,12 +70,12 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
             </div>
           )}
           {experience.type === 'Attraction' && (
-            <div className="flex items-end justify-between pt-1">
-                <button
-                  className="px-3 py-1 rounded-full text-xs font-medium bg-sand-dark text-sand-dark-foreground hover:bg-sand-dark/80 transition-colors"
-                >
-                  Voir les billets
-                </button>
+            <div className="flex items-end justify-end pt-1">
+              <button
+                className="px-3 py-1 rounded-[4px] text-xs font-medium bg-sand-dark text-sand-dark-foreground hover:bg-sand-dark/80 transition-colors"
+              >
+                Voir les billets
+              </button>
             </div>
           )}
         </div>

@@ -4,7 +4,7 @@ import SearchBar from './SearchBar';
 
 const Header: React.FC = () => {
   return (
-    <header className="z-50 sticky top-0 h-[100px] bg-gradient-to-b from-sand via-sand/80 to-transparent">
+    <header className="z-50 sticky top-0 h-[100px] bg-gradient-to-b from-sand via-sand/90 to-transparent">
       <div className="max-w-[90rem] mx-auto px-6 h-full flex items-center justify-between">
         {/* Logo */}
         <a href="/" className="flex items-center">
