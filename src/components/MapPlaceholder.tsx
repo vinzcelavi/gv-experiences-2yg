@@ -30,16 +30,16 @@ const MapPlaceholder: React.FC = () => {
       <div className="absolute top-1/4 left-1/3 transform -translate-x-1/2 -translate-y-1/2">
         <div className="relative">
           <MapPin className="w-8 h-8 text-red-500 fill-current drop-shadow-lg" />
-          <div className="absolute -top-2 -right-2 bg-white text-xs font-bold px-2 py-1 rounded-full shadow-md border">
+          <div className="absolute -top-2 left-1/2 -translate-x-1/2 bg-white text-xs font-bold px-2 py-1 rounded-full shadow-md border">
             4.7
           </div>
         </div>
       </div>
 
-      <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute top-1/3 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <div className="relative">
           <MapPin className="w-8 h-8 text-red-500 fill-current drop-shadow-lg" />
-          <div className="absolute -top-2 -right-2 bg-white text-xs font-bold px-2 py-1 rounded-full shadow-md border">
+          <div className="absolute -top-2 left-1/2 -translate-x-1/2 bg-white text-xs font-bold px-2 py-1 rounded-full shadow-md border">
             4.7
           </div>
         </div>
@@ -48,7 +48,7 @@ const MapPlaceholder: React.FC = () => {
       <div className="absolute bottom-1/3 right-1/4 transform translate-x-1/2 translate-y-1/2">
         <div className="relative">
           <MapPin className="w-8 h-8 text-red-500 fill-current drop-shadow-lg" />
-          <div className="absolute -top-2 -right-2 bg-white text-xs font-bold px-2 py-1 rounded-full shadow-md border">
+          <div className="absolute -top-2 left-1/2 -translate-x-1/2 bg-white text-xs font-bold px-2 py-1 rounded-full shadow-md border">
             4.5
           </div>
         </div>
