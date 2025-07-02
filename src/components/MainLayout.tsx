@@ -12,7 +12,7 @@ const MainLayout: React.FC = () => {
         </div>
         
         {/* Right Column - 33% */}
-        <div className="w-1/3">
+        <div className="w-1/3 min-w-[450px]">
           <div className="sticky top-[100px] h-[calc(100vh-132px)]">
             <MapPlaceholder />
           </div>

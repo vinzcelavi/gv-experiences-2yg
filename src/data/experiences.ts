@@ -2,7 +2,7 @@ import { Experience } from '../types/experience';
 
 export const experiences: Experience[] = [
   {
-    id: '1',
+    id: '550e8400-e29b-41d4-a716-446655440000',
     title: 'Visite guidée du Colisée, du Forum romain et du Palatin',
     image: 'https://image.doyoogo.com/v1/AUTH_d520489aa8e84f6d9336c74a7eb5fa0e/doyoogo-media-cache/dyg_api_size_l/ticket/GET/195566/7cdc09f6d94bc28f046c83d00fa151b5.jpg',
     provider: 'GetYourGuide',
@@ -10,10 +10,11 @@ export const experiences: Experience[] = [
     reviewCount: 65362,
     startingPrice: 55,
     description: '',
-    location: ''
+    location: '',
+    type: 'Ticket',
   },
   {
-    id: '2',
+    id: '550e8400-e29b-41d4-a716-446655440001',
     title: 'Rome : visite guidée du Colisée, du Palatin et du Forum romain',
     image: 'https://image.doyoogo.com/v1/AUTH_d520489aa8e84f6d9336c74a7eb5fa0e/doyoogo-media-cache/dyg_api_size_l/ticket/GET/408602/73fb97389984e2e25da81eb874d29160.jpg',
     provider: 'GetYourGuide',
@@ -21,10 +22,23 @@ export const experiences: Experience[] = [
     reviewCount: 26932,
     startingPrice: 68,
     description: '',
-    location: ''
+    location: '',
+    type: 'Ticket'
   },
   {
-    id: '3',
+    id: '550e8400-e29b-41d4-a716-446655440001',
+    title: 'Colisée',
+    image: 'https://cdn.generationvoyage.fr/2025/01/visite-colisee-rome-billets-630x429.jpeg',
+    provider: '',
+    rating: 4.6,
+    reviewCount: 93690,
+    startingPrice: 0,
+    description: '',
+    location: '',
+    type: 'Attraction'
+  },
+  {
+    id: '550e8400-e29b-41d4-a716-446655440002',
     title: 'Rome : Visite guidée du Colisée, du Forum romain et du Palatin',
     image: 'https://image.doyoogo.com/v1/AUTH_d520489aa8e84f6d9336c74a7eb5fa0e/doyoogo-media-cache/dyg_api_size_l/ticket/GET/405524/8306a72a7815136cbf5ff5a52798826f.jpg',
     provider: 'GetYourGuide',
@@ -32,10 +46,11 @@ export const experiences: Experience[] = [
     reviewCount: 26454,
     startingPrice: 72,
     description: '',
-    location: ''
+    location: '',
+    type: 'Ticket'
   },
   {
-    id: '4',
+    id: '550e8400-e29b-41d4-a716-446655440003',
     title: 'Rome : visite guidée complète du Colisée, du Forum romain et du mont Palatin',
     image: 'https://image.doyoogo.com/v1/AUTH_d520489aa8e84f6d9336c74a7eb5fa0e/doyoogo-media-cache/dyg_api_size_l/ticket/VIA/3731COLOSSEUM/28defc38c4a7f464f5764875d87f9fcb.jpg',
     provider: 'Viator',
@@ -43,10 +58,11 @@ export const experiences: Experience[] = [
     reviewCount: 22723,
     startingPrice: 39,
     description: '',
-    location: ''
+    location: '',
+    type: 'Ticket'
   },
   {
-    id: '5',
+    id: '550e8400-e29b-41d4-a716-446655440004',
     title: 'Visite guidée du Colisée, du Palatin et du Forum romain',
     image: 'https://image.doyoogo.com/v1/AUTH_d520489aa8e84f6d9336c74a7eb5fa0e/doyoogo-media-cache/dyg_api_size_l/ticket/HDT/3075/66cb68d6ac6f95f2f9d2bacd386d938a.jpg',
     provider: 'Headout',
@@ -54,10 +70,11 @@ export const experiences: Experience[] = [
     reviewCount: 17528,
     startingPrice: 44,
     description: '',
-    location: ''
+    location: '',
+    type: 'Ticket'
   },
   {
-    id: '6',
+    id: '550e8400-e29b-41d4-a716-446655440005',
     title: 'Visite du Colisée + Porte des gladiateurs',
     image: 'https://image.doyoogo.com/v1/AUTH_d520489aa8e84f6d9336c74a7eb5fa0e/doyoogo-media-cache/dyg_api_size_l/ticket/CVT/27814/54fff0fa64c7929159f7166e5a1ce720.jpg',
     provider: 'Civitatis',
@@ -65,10 +82,11 @@ export const experiences: Experience[] = [
     reviewCount: 17287,
     startingPrice: 99,
     description: '',
-    location: ''
+    location: '',
+    type: 'Ticket'
   },
   {
-    id: '7',
+    id: '550e8400-e29b-41d4-a716-446655440006',
     title: 'Visite guidée de la Rome antique : Colisée, Forum et Palatin',
     image: 'https://image.doyoogo.com/v1/AUTH_d520489aa8e84f6d9336c74a7eb5fa0e/doyoogo-media-cache/dyg_api_size_l/ticket/GET/7725/524af3b26060cfeae167caf8903ef6b4.jpg',
     provider: 'GetYourGuide',
@@ -76,10 +94,11 @@ export const experiences: Experience[] = [
     reviewCount: 17147,
     startingPrice: 79,
     description: '',
-    location: ''
+    location: '',
+    type: 'Ticket'
   },
   {
-    id: '8',
+    id: '550e8400-e29b-41d4-a716-446655440007',
     title: 'Rome : Visite du Colisée, du Forum et de la colline Palatine et arènes en option',
     image: 'https://image.doyoogo.com/v1/AUTH_d520489aa8e84f6d9336c74a7eb5fa0e/doyoogo-media-cache/dyg_api_size_l/ticket/GET/217332/2bfe097fa70502df5f8a27b283a9a4cd.jpg',
     provider: 'GetYourGuide',
@@ -87,10 +106,11 @@ export const experiences: Experience[] = [
     reviewCount: 14795,
     startingPrice: 35,
     description: '',
-    location: ''
+    location: '',
+    type: 'Ticket'
   },
   {
-    id: '9',
+    id: '550e8400-e29b-41d4-a716-446655440008',
     title: 'Rome : Colisée et Forum avec audioguide -Arènes en option',
     image: 'https://image.doyoogo.com/v1/AUTH_d520489aa8e84f6d9336c74a7eb5fa0e/doyoogo-media-cache/dyg_api_size_l/ticket/GET/562279/c014c4538d6b076963802a84728e6e96.jpg',
     provider: 'GetYourGuide',
@@ -98,10 +118,11 @@ export const experiences: Experience[] = [
     reviewCount: 13453,
     startingPrice: 36,
     description: '',
-    location: ''
+    location: '',
+    type: 'Ticket'
   },
   {
-    id: '10',
+    id: '550e8400-e29b-41d4-a716-446655440009',
     title: 'Rome : Visite guidée du Colisée, du Palatin et du Forum romain',
     image: 'https://image.doyoogo.com/v1/AUTH_d520489aa8e84f6d9336c74a7eb5fa0e/doyoogo-media-cache/dyg_api_size_l/ticket/GET/183914/63a18aa4adfa401e1c4a999a98637d06.jpg',
     provider: 'GetYourGuide',
@@ -109,10 +130,11 @@ export const experiences: Experience[] = [
     reviewCount: 12947,
     startingPrice: 55,
     description: '',
-    location: ''
+    location: '',
+    type: 'Ticket'
   },
   {
-    id: '11',
+    id: '550e8400-e29b-41d4-a716-446655440010',
     title: 'Rome : Colisée, Forum romain, Palatin avec vidéo multimédia',
     image: 'https://image.doyoogo.com/v1/AUTH_d520489aa8e84f6d9336c74a7eb5fa0e/doyoogo-media-cache/dyg_api_size_l/ticket/GET/225249/43f71d5b1e597490a75b7d3731b9327e.jpg',
     provider: 'GetYourGuide',
@@ -120,10 +142,11 @@ export const experiences: Experience[] = [
     reviewCount: 12811,
     startingPrice: 28,
     description: '',
-    location: ''
+    location: '',
+    type: 'Ticket'
   },
   {
-    id: '12',
+    id: '550e8400-e29b-41d4-a716-446655440011',
     title: 'Visite guidée du Colisée, de la colline du Palatin et du Forum romain',
     image: 'https://image.doyoogo.com/v1/AUTH_d520489aa8e84f6d9336c74a7eb5fa0e/doyoogo-media-cache/dyg_api_size_l/ticket/HDT/9179/c6ddabb435f976bfafed7531a89ce39a.jpg',
     provider: 'Headout',
@@ -131,10 +154,11 @@ export const experiences: Experience[] = [
     reviewCount: 11048,
     startingPrice: 58,
     description: '',
-    location: ''
+    location: '',
+    type: 'Ticket'
   },
   {
-    id: '13',
+    id: '550e8400-e29b-41d4-a716-446655440012',
     title: 'Rome : Colisée, arènes, Palatin et Forum : visite guidée',
     image: 'https://image.doyoogo.com/v1/AUTH_d520489aa8e84f6d9336c74a7eb5fa0e/doyoogo-media-cache/dyg_api_size_l/ticket/GET/183746/21b8da08d983b379281a06755da36848.jpg',
     provider: 'GetYourGuide',
@@ -142,10 +166,11 @@ export const experiences: Experience[] = [
     reviewCount: 10901,
     startingPrice: 72,
     description: '',
-    location: ''
+    location: '',
+    type: 'Ticket'
   },
   {
-    id: '14',
+    id: '550e8400-e29b-41d4-a716-446655440013',
     title: 'Accès au Colisée, à la colline du Palatin et au Forum romain',
     image: 'https://image.doyoogo.com/v1/AUTH_d520489aa8e84f6d9336c74a7eb5fa0e/doyoogo-media-cache/dyg_api_size_l/ticket/HDT/7148/992285777c0b5fbaf6e662991175515a.jpg',
     provider: 'Headout',
@@ -153,10 +178,11 @@ export const experiences: Experience[] = [
     reviewCount: 10704,
     startingPrice: 32,
     description: '',
-    location: ''
+    location: '',
+    type: 'Ticket'
   },
   {
-    id: '15',
+    id: '550e8400-e29b-41d4-a716-446655440014',
     title: 'Rome : Visite guidée du Colisée, du Palatin et du Forum romain',
     image: 'https://image.doyoogo.com/v1/AUTH_d520489aa8e84f6d9336c74a7eb5fa0e/doyoogo-media-cache/dyg_api_size_l/ticket/GET/1881/2614eaf29f0285facbe21bb646f49f29.jpg',
     provider: 'GetYourGuide',
@@ -164,10 +190,11 @@ export const experiences: Experience[] = [
     reviewCount: 8403,
     startingPrice: 54,
     description: '',
-    location: ''
+    location: '',
+    type: 'Ticket'
   },
   {
-    id: '16',
+    id: '550e8400-e29b-41d4-a716-446655440015',
     title: 'Colisée : Visite des souterrains et de la Rome antique',
     image: 'https://image.doyoogo.com/v1/AUTH_d520489aa8e84f6d9336c74a7eb5fa0e/doyoogo-media-cache/dyg_api_size_l/ticket/GET/134577/4f6055c11a3b9a852572ded140235383.jpg',
     provider: 'GetYourGuide',
@@ -175,10 +202,11 @@ export const experiences: Experience[] = [
     reviewCount: 8074,
     startingPrice: 179,
     description: '',
-    location: ''
+    location: '',
+    type: 'Ticket'
   },
   {
-    id: '17',
+    id: '550e8400-e29b-41d4-a716-446655440016',
     title: 'Rome : Visite guidée du Colisée, du Forum romain et de la colline Palatine',
     image: 'https://image.doyoogo.com/v1/AUTH_d520489aa8e84f6d9336c74a7eb5fa0e/doyoogo-media-cache/dyg_api_size_l/ticket/GET/84141/129d3859dddf1301824f4787e44ce2a6.jpg',
     provider: 'GetYourGuide',
@@ -186,10 +214,11 @@ export const experiences: Experience[] = [
     reviewCount: 7907,
     startingPrice: 47,
     description: '',
-    location: ''
+    location: '',
+    type: 'Ticket'
   },
   {
-    id: '18',
+    id: '550e8400-e29b-41d4-a716-446655440017',
     title: 'Rome : visite guidée du Colisée, du Forum romain et du mont Palatin',
     image: 'https://image.doyoogo.com/v1/AUTH_d520489aa8e84f6d9336c74a7eb5fa0e/doyoogo-media-cache/dyg_api_size_l/ticket/VIA/15932P15/9d49b593a8fcdb3402a155e30d50d5b5.jpg',
     provider: 'Viator',
@@ -197,7 +226,8 @@ export const experiences: Experience[] = [
     reviewCount: 7357,
     startingPrice: 31,
     description: '',
-    location: ''
+    location: '',
+    type: 'Ticket'
   },
   {
     id: '19',
@@ -208,6 +238,7 @@ export const experiences: Experience[] = [
     reviewCount: 7262,
     startingPrice: 25,
     description: '',
-    location: ''
+    location: '',
+    type: 'Ticket'
   }
 ];

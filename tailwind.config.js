@@ -9,13 +9,28 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        'poppins': ['Poppins', 'sans-serif'],
+        'brixton': ['BrixtonTC', 'sans-serif'],
+      },
       borderRadius: {
         lg: 'var(--radius)',
         md: 'calc(var(--radius) - 2px)',
         sm: 'calc(var(--radius) - 4px)',
       },
       colors: {
-        sand: '#FCF8F2',
+        tuscany: {
+          DEFAULT: '#C6502E',
+          border: '#C6502E',
+        },
+        sand: {
+          DEFAULT: '#FCF8F2',
+          border: '#FCF8F2',
+        },
+        'sand-dark': {
+          DEFAULT: '#F2EADB',
+          border: '#F2EADB',
+        },
         gold: '#FFD600',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',

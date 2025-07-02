@@ -8,4 +8,5 @@ export interface Experience {
   startingPrice: number;
   description: string;
   location: string;
+  type: 'Ticket' | 'Attraction';
 }
