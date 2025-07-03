@@ -52,7 +52,7 @@ export const experiences: Experience[] = [
   {
     id: '550e8400-e29b-41d4-a716-446655440876',
     title: 'Vatican',
-    image: 'https://image.doyoogo.com/v1/AUTH_d520489aa8e84f6d9336c74a7eb5fa0e/doyoogo-media-cache/dyg_api_size_l/ticket/HDT/3075/66cb68d6ac6f95f2f9d2bacd386d938a.jpg',
+    image: 'https://cdn.generationvoyage.fr/2023/08/Basilique-Saint-Pierre-et-pont-Ponte-Vittorio-Emanuele-II-au-Vatican-Rome.Italie.jpeg',
     provider: '',
     rating: 4.5,
     reviewCount: 528934,
