@@ -17,6 +17,16 @@
   line-height: 1.5;
   font-weight: 400;
   color-scheme: light;
+
+  --primary: 18 63% 48%;           /* #C6502E */
+  --primary-light: 18 63% 55%;     /* #D2694A */
+  --primary-dark: 18 63% 40%;      /* #A03D24 */
+  --primary-foreground: 0 0% 100%; /* white */
+  --primary-border: 18 63% 48%;    /* #C6502E or adjust as needed */
+  --secondary: 36 82% 96%;         /* #FCF8F2 */
+  --secondary-foreground: 24 80% 50%; /* pick a readable color */
+  --secondary-dark: 39 44% 92%;    /* #F2EADB */
+  --gold: 51 100% 50%;             /* #FFD600 */
 }
 
 * {

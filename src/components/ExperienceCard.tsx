@@ -24,7 +24,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
       >
         <div className={`relative overflow-hidden bg-white rounded-[8px] ${isHovered ? '' : 'shadow-[0px_58px_23px_rgba(97,57,0,0.01),0px_33px_20px_rgba(97,57,0,0.05),0px_15px_15px_rgba(97,57,0,0.09),0px_4px_8px_rgba(97,57,0,0.1)]'}`}>
           {experience.type && (
-            <div className={`z-10 absolute bottom-2 left-2 px-1 pt-1.5 pb-0.5 rounded-[4px] flex items-center justify-center ${experience.type === 'Ticket' ? 'bg-tuscany-light' : 'bg-white'}`}>
+            <div className={`z-10 absolute bottom-2 left-2 px-1 pt-1.5 pb-0.5 rounded-[4px] flex items-center justify-center ${experience.type === 'Ticket' ? 'bg-primary-light' : 'bg-white'}`}>
               <span className={`leading-none text-xs font-brixton ${experience.type === 'Ticket' ? 'text-white' : ''}`}>
                 {experience.type}
               </span>
@@ -72,7 +72,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
           {experience.type === 'Attraction' && (
             <div className="flex items-end justify-end pt-1">
               <button
-                className="px-3 py-1 rounded-[4px] text-xs font-medium bg-sand-dark text-sand-dark-foreground hover:bg-sand-dark/80 transition-colors"
+                className="px-3 py-1 rounded-[4px] text-xs font-medium bg-secondary-dark text-secondary-dark-foreground hover:bg-secon dary-dark/80 transition-colors"
               >
                 Voir les billets
               </button>

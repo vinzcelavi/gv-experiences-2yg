@@ -64,7 +64,7 @@ const SearchBar: React.FC<SearchBarProps> = ({
         {/* Search button */}
         <button
           onClick={handleSearch}
-          className="w-12 h-12 flex items-center justify-center rounded-[1000px] bg-custom-red text-white hover:bg-custom-red-dark transition-colors duration-200 -mr-1 shadow-md"
+          className="w-12 h-12 flex items-center justify-center rounded-[1000px] bg-primary text-white hover:bg-primary-dark transition-colors duration-200 -mr-1 shadow-md"
           style={{ boxShadow: '0 2px 8px rgba(198,80,46,0.10)' }}
         >
           <Search className="w-6 h-6" />

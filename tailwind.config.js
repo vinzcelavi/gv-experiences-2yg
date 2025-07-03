@@ -19,23 +19,27 @@ export default {
         sm: 'calc(var(--radius) - 4px)',
       },
       colors: {
-        'tuscany-light': {
-          DEFAULT: '#D2694A',
-          border: '#D2694A',
+        primary: {
+          DEFAULT: 'hsl(var(--primary))',
+          border: 'hsl(var(--primary-border))',
         },
-        tuscany: {
-          DEFAULT: '#C6502E',
-          border: '#C6502E',
+        'primary-light': {
+          DEFAULT: 'hsl(var(--primary-light))',
+          border: 'hsl(var(--primary-light-border))',
         },
-        sand: {
-          DEFAULT: '#FCF8F2',
-          border: '#FCF8F2',
+        'primary-dark': {
+          DEFAULT: 'hsl(var(--primary-dark))',
+          border: 'hsl(var(--primary-dark-border))',
         },
-        'sand-dark': {
-          DEFAULT: '#F2EADB',
-          border: '#F2EADB',
+        secondary: {
+          DEFAULT: 'hsl(var(--secondary))',
+          border: 'hsl(var(--secondary-border))',
         },
-        gold: '#FFD600',
+        'secondary-dark': {
+          DEFAULT: 'hsl(var(--secondary-dark))',
+          border: 'hsl(var(--secondary-dark-border))',
+        },
+        gold: 'hsl(var(--gold))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -75,10 +79,6 @@ export default {
           3: 'hsl(var(--chart-3))',
           4: 'hsl(var(--chart-4))',
           5: 'hsl(var(--chart-5))',
-        },
-        custom: {
-          red: '#C6502E',
-          'red-dark': '#A03D24',
         },
       },
       keyframes: {

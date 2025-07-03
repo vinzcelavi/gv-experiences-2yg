@@ -14,14 +14,14 @@ const ExperienceGrid: React.FC = () => {
           </h2>
         </div>
         
-        <button className="flex items-center space-x-2 px-4 py-2 bg-white border-2 border-sand-dark rounded-[1000px] hover:bg-gray-50 transition-colors duration-200">
+        <button className="flex items-center space-x-2 px-4 py-2 bg-white border-2 border-secondary-dark rounded-[1000px] hover:bg-gray-50 transition-colors duration-200">
           <Filter className="w-4 h-4" />
           <span className="text-sm font-medium">Afficher les filtres</span>
         </button>
       </div>
 
       {/* Grid */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {experiences.map((experience) => (
           <ExperienceCard key={experience.id} experience={experience} />
         ))}
