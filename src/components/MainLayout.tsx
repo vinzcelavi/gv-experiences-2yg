@@ -16,7 +16,7 @@ const MainLayout = () => {
             <Sheet open={open} onOpenChange={setOpen}>
               <SheetTrigger asChild>
                 <button
-                  className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 px-6 py-3 rounded-full bg-primary text-primary-foreground text-sm font-medium shadow-lg hover:bg-primary-light transition-colors"
+                  className="fixed bottom-8 left-1/2 -translate-x-1/2 z-50 px-6 py-3 rounded-full bg-mine-shaft text-primary-foreground text-sm font-medium shadow-2xl"
                   onClick={() => setOpen(true)}
                 >
                   Afficher la carte

@@ -27,6 +27,7 @@
   --secondary-foreground: 24 80% 50%; /* pick a readable color */
   --secondary-dark: 39 44% 92%;    /* #F2EADB */
   --gold: 51 100% 50%;             /* #FFD600 */
+  --mine-shaft: 0 0% 13%;         /* #222222 */
 }
 
 * {
