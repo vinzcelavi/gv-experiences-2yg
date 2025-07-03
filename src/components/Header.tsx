@@ -7,12 +7,12 @@ const Header: React.FC = () => {
     <header className="z-50 sticky top-0 h-[100px] bg-gradient-to-b from-secondary via-secondary/90 to-transparent">
       <div className="max-w-[90rem] mx-auto px-6 h-full flex items-center gap-4 justify-between">
         {/* Logo */}
-        <a href="/" className="flex items-center">
+        <a href="/" className="hidden md:flex items-center">
           {/* Mobile icon */}
           <img
             src="/gv-icon.svg"
             alt="GV"
-            className="hidden h-8 w-8"
+            className="hidden md:flex lg:hidden h-7 w-7"
           />
           {/* Desktop logo */}
           <img
