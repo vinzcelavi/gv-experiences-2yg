@@ -5,7 +5,7 @@ export interface Experience {
   rating: number;
   reviewCount: number;
   provider: string;
-  startingPrice: number;
+  startingPrice: number | null;
   description: string;
   location: string;
   type: 'Ticket' | 'Attraction';
