@@ -12,7 +12,7 @@ import {
 export interface Category {
   id: string;
   name: string;
-  icon: React.ComponentType<{ className?: string; strokeWidth?: number }>;
+  icon: React.ComponentType<React.SVGProps<SVGSVGElement>>;
 }
 
 export const categories: Category[] = [
