@@ -91,7 +91,7 @@ const ExperienceCard: React.FC<ExperienceCardProps> = ({ experience }) => {
             </div>
           )}
           {experience.type === 'Attraction' && (
-            <div className="flex lg:flex-col xl:flex-row gap-2 justify-start">
+            <div className="flex lg:flex-col 2xl:flex-row gap-2 justify-start">
               <button
                 className="flex items-center justify-center gap-1.5 px-2 py-1.5 flex-1 rounded-[4px] text-xs font-medium border border-white/40 text-secondary hover:bg-secon dary-dark/80 transition-colors"
               >
