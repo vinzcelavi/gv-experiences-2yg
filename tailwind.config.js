@@ -39,6 +39,10 @@ export default {
           DEFAULT: 'hsl(var(--secondary-dark))',
           border: 'hsl(var(--secondary-dark-border))',
         },
+        'secondary-darker': {
+          DEFAULT: 'hsl(var(--secondary-darker))',
+          border: 'hsl(var(--secondary-darker-border))',
+        },
         'mine-shaft': {
           DEFAULT: 'hsl(var(--mine-shaft))',
           border: 'hsl(var(--mine-shaft-border))',
