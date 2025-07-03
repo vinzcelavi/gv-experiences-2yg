@@ -7,7 +7,7 @@ const MainLayout = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="z-100 relative max-w-[90rem] mx-auto px-6 py-8">
+    <div className="z-100 relative max-w-[90rem] mx-auto px-6 pb-8">
       <div className="flex gap-8 min-h-screen">
         {/* Left Column - 66% */}
         <div className="w-full lg:w-2/3">

@@ -7,7 +7,7 @@ const ExperienceGrid: React.FC = () => {
   return (
     <div className="flex-1">
       {/* Results Header */}
-      <div className="flex items-end justify-between mb-6">
+      <div className="flex items-end justify-between mb-2">
         <div className="flex items-end space-x-4 pl-2">
           <h2 className="text-sm text-gray-600">
             20 sur 1604 résultats
